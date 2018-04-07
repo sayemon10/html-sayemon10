@@ -7,10 +7,10 @@
   --my_blue: rgba(0, 120, 215, 1);
 }
 #MainNav>.container>.social>a>i:hover{
-  color:  #ffd42d;
+  color:  rgba(255, 212, 45, 1);
 }
 #MainNav>.container>.social>a>svg>g>.st0:hover{
-  fill: #ffd42d;
+  fill: rgba(255, 212, 45, 1);
 }
 #MainNav>.container>.social>a>svg>g>.st0{
   fill: var(--my_blue);
@@ -126,6 +126,9 @@
 }
 .email{
   height: 3rem;
+}
+.CV:hover{
+  color: rgba(255, 212, 45, 1);
 }
 #contact{
   background-color: var(--my_blue);
