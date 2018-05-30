@@ -32,7 +32,7 @@ Version: 1.0
 .color{
   color: var(--my_blue);
 }
-#MainNav{
+.NavbarBg {
     background-color: rgba(255, 255, 255, 0.3);
 }
 .Hero{
@@ -97,9 +97,9 @@ Version: 1.0
   }
 }
 .navbar>.container>.row>a>.logo-text{
-    padding-left: 1.5rem;
-    font-family: "Popsky", sans-serif;
-    font-size: 1.25rem;
+  font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5rem;
+    color: var(--my_blue);
 }
 #About>.row>.profile{
     background-image: url("../images/profile.jpg");
@@ -114,7 +114,7 @@ Version: 1.0
 
 }
 #About>.row>.col-10>.col>p{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 200;
   font-size: 1rem;
 
