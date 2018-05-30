@@ -108,7 +108,7 @@ Version: 1.0
     background-position: 0 0;
     background-repeat: no-repeat;
 }
-#About>.row>.col-10>.col>h2.text-right{
+#About>.row>.col-10>.col>h2.text-md-right{
   font-family: "Popsky", sans-serif;
   font-size: 4rem;
 
