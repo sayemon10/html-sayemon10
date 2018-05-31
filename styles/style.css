@@ -36,9 +36,7 @@ Version: 1.0
     background-color: rgba(255, 255, 255, 0.3);
 }
 .Hero{
-    background-image: url("../images/expertise.jpg");
-    background-size: cover;
-    background-position: left center;
+  background: url("../images/expertise.jpg") no-repeat center/cover;    
     height: 100vh;
     color: var(--my_blue);
     margin-top: -80px;
