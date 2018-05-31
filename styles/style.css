@@ -11,54 +11,62 @@ twitter: @sayemon10
 Version: 1.0
 ==================================================*/
 
-
 @font-face {
   font-family: "Popsky";
-  src: url("../webfonts/Popsky/PopskyColor-FREE.otf")
-  format("opentype");
+  src: url("../webfonts/Popsky/PopskyColor-FREE.otf") format("opentype");
 }
-:root{
+
+:root {
   --my_blue: rgba(0, 120, 215, 1);
 }
-#MainNav>.container>.social>a>i:hover{
-  color:  rgba(255, 212, 45, 1);
+
+#MainNav>.container>.social>a>i:hover {
+  color: rgba(255, 212, 45, 1);
 }
-#MainNav>.container>.social>a>svg>g>.st0:hover{
+
+#MainNav>.container>.social>a>svg>g>.st0:hover {
   fill: rgba(255, 212, 45, 1);
 }
-#MainNav>.container>.social>a>svg>g>.st0{
+
+#MainNav>.container>.social>a>svg>g>.st0 {
   fill: var(--my_blue);
 }
-.color{
+
+.color {
   color: var(--my_blue);
 }
+
 .NavbarBg {
-    background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
-.Hero{
-  background: url("../images/expertise.jpg") no-repeat center/cover;    
-    height: 100vh;
-    color: var(--my_blue);
-    margin-top: -80px;
-    font-family: 'Rubik', sans-serif;
-    font-size: 1rem;
+
+.Hero {
+  background: url("../images/expertise.jpg") no-repeat center/cover;
+  height: 100vh;
+  color: var(--my_blue);
+  margin-top: -80px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
 }
-#bottom{
-    background: transparent;
-    height: 60px;
+
+#bottom {
+  background: transparent;
+  height: 60px;
 }
-.icon-scroll,
-.icon-scroll:before {
+
+.icon-scroll, .icon-scroll:before {
   position: absolute;
   left: 50%;
 }
+
 .icon-scroll {
   width: 20px;
   height: 35px;
   -webkit-box-shadow: inset 0 0 0 1px var(--my_blue);
-          box-shadow: inset 0 0 0 1px var(--my_blue);
+  box-shadow: inset 0 0 0 1px var(--my_blue);
   border-radius: 12.5px;
 }
+
 .icon-scroll:before {
   content: '';
   width: 4px;
@@ -68,12 +76,13 @@ Version: 1.0
   top: 4px;
   border-radius: 2px;
   -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-name: scroll;
-          animation-name: scroll;
+  animation-name: scroll;
 }
+
 @-webkit-keyframes scroll {
   0% {
     opacity: 1;
@@ -81,9 +90,10 @@ Version: 1.0
   100% {
     opacity: 0;
     -webkit-transform: translateY(12px);
-            transform: translateY(12px);
+    transform: translateY(12px);
   }
 }
+
 @keyframes scroll {
   0% {
     opacity: 1;
@@ -91,122 +101,136 @@ Version: 1.0
   100% {
     opacity: 0;
     -webkit-transform: translateY(23px);
-            transform: translateY(23px);
+    transform: translateY(23px);
   }
 }
-.navbar>.container>.row>a>.logo-text{
+
+.navbar>.container>.row>a>.logo-text {
   font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.5rem;
-    color: var(--my_blue);
+  font-size: 1.5rem;
+  color: var(--my_blue);
 }
-#About>.row>.profile{
-    background-image: url("../images/profile.jpg");
-    background-size: cover;
-    height: 720px;
-    background-position: 0 0;
-    background-repeat: no-repeat;
+
+#About>.row>.profile {
+  background-image: url("../images/profile.jpg");
+  background-size: cover;
+  height: 720px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
-#About>.row>.col-10>.col>h2.text-md-right{
+
+#About>.row>.col-10>.col>h2.text-md-right {
   font-family: "Popsky", sans-serif;
   font-size: 4rem;
-
 }
-#About>.row>.col-10>.col>p{
+
+#About>.row>.col-10>.col>p {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 200;
   font-size: 1rem;
-
 }
-#About>.row>.col-10>.col>p>.name{
+
+#About>.row>.col-10>.col>p>.name {
   font-size: 1.15rem;
   font-family: 'Rubik', sans-serif;
 }
-#About,
-#expert{
+
+#About, #expert {
   background-color: rgba( 252, 252, 248, 1);
 }
-#expert{
+
+#expert {
   background-image: url("../images/002fff44-26f8-4134-8c05-b696e3adabea.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   height: 100vh;
 }
-#greet{
+
+#greet {
   font-family: 'Rubik', sans-serif;
   font-size: 1rem;
   padding-top: 10rem;
 }
-.email{
+
+.email {
   height: 3rem;
 }
-.CV:hover{
+
+.CV:hover {
   color: rgba(255, 212, 45, 1);
 }
-#contact{
+
+#contact {
   background-color: var(--my_blue);
   color: rgba( 252, 252, 248, 1);
   height: 3rem;
   font-family: 'Rubik', sans-serif;
   font-size: 1rem;
 }
-.vscode{
+
+.vscode {
   height: 5rem;
   font-family: 'Rubik', sans-serif;
   color: var(--my_blue);
 }
-.design{
+
+.design {
   font-family: "Popsky", sans-serif;
 }
 
 /*** Media Query ***/
+
 @media only screen and (max-width: 575.98px) {
-  #classic{
+  #classic {
     display: none;
   }
-  .Hero{
+  .Hero {
     margin-top: -125px;
   }
-  #About{
+  #About {
     padding-top: 14rem;
   }
-  #expert>.row>div{
+  #expert>.row>div {
     padding: 2.5rem;
   }
-  .vscode{
+  .vscode {
     height: 5rem;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
-  #classic{
+  #classic {
     display: none;
   }
-  #About{
+  #About {
     padding-top: 14rem;
     padding-bottom: 2rem;
   }
-   #expert>.row>div{
+  #expert>.row>div {
     padding: 3rem;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-  #classic{
+  #classic {
     display: none;
   }
-  #About{
+  #About {
     padding-top: 14rem;
     padding-bottom: 2rem;
   }
-  #expert{
+  #expert {
     padding-top: 2.5rem;
   }
-  #expert>.row>div{
+  #expert>.row>div {
     padding: 3rem;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {}
+
 @media only screen and (min-width: 1200px) {
-  .Hero{
+  .Hero {
     background-attachment: fixed;
   }
 }
