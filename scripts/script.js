@@ -11,7 +11,7 @@ $(window).scroll(function() {
 //Preloader
 var preloader = $('.preloader');
 $(window).on('load', function() {
-    var preloaderFadeOutTime = 500;
+    var preloaderFadeOutTime = 300;
 
     function hidePreloader() {
         preloader.fadeOut(preloaderFadeOutTime);
