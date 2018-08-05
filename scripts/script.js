@@ -1,4 +1,4 @@
-$(window).scroll(function() {    
+$(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 500) {
@@ -10,7 +10,7 @@ $(window).scroll(function() {
 
 //Preloader
 var preloader = $('.preloader');
-$(window).on('load', function() {
+$(window).on('load', function () {
     var preloaderFadeOutTime = 300;
 
     function hidePreloader() {
