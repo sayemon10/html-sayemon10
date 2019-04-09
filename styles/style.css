@@ -11,105 +11,6 @@ twitter: @sayemon10
 Version: 1.0
 ==================================================*/
 
-/*==================================================
-    Preloader CSS
-==================================================*/
-
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(13, 13, 13, 1);
-  z-index: 9999999;
-}
-
-.sk-cube-grid {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.sk-cube-grid .sk-cube {
-  width: 33%;
-  height: 33%;
-  background-color: rgba( 252, 252, 248, 1);
-  float: left;
-  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-}
-
-.sk-cube-grid .sk-cube1 {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-.sk-cube-grid .sk-cube2 {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-
-.sk-cube-grid .sk-cube3 {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-
-.sk-cube-grid .sk-cube4 {
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-
-.sk-cube-grid .sk-cube5 {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-.sk-cube-grid .sk-cube6 {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-
-.sk-cube-grid .sk-cube7 {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-}
-
-.sk-cube-grid .sk-cube8 {
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-
-.sk-cube-grid .sk-cube9 {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-@-webkit-keyframes sk-cubeGridScaleDelay {
-  0%, 70%, 100% {
-    -webkit-transform: scale3D(1, 1, 1);
-    transform: scale3D(1, 1, 1);
-  }
-  35% {
-    -webkit-transform: scale3D(0, 0, 1);
-    transform: scale3D(0, 0, 1);
-  }
-}
-
-@keyframes sk-cubeGridScaleDelay {
-  0%, 70%, 100% {
-    -webkit-transform: scale3D(1, 1, 1);
-    transform: scale3D(1, 1, 1);
-  }
-  35% {
-    -webkit-transform: scale3D(0, 0, 1);
-    transform: scale3D(0, 0, 1);
-  }
-}
-
 @font-face {
   font-family: "Popsky";
   src: url("../webfonts/Popsky/PopskyColor-FREE.otf") format("opentype");
@@ -229,12 +130,12 @@ Version: 1.0
   font-size: 1rem;
 }
 
-#About>.row>.col-10>.col>p>.name {
+.name {
   font-size: 1.15rem;
   font-family: 'Rubik', sans-serif;
 }
 
-#About, #expert {
+#About, #expert #portfolio {
   background-color: rgba( 252, 252, 248, 1);
 }
 
@@ -277,6 +178,32 @@ Version: 1.0
   font-family: "Popsky", sans-serif;
 }
 
+/***
+  portfolio page
+***/
+
+#Layer_1 {
+  height: 3rem;
+  width: auto;
+}
+
+.studioChittagong::after {
+  content: url("../images/studioChittagongProject.jpg");
+  position: absolute;
+  left: -10rem;
+  top: 3rem;
+  z-index: -1;
+  display: none;
+}
+
+.portfolio:hover .studioChittagong::after {
+  display: block;
+}
+
+.portfolio {
+  height: 60vh;
+}
+
 /*** Media Query ***/
 
 @media only screen and (max-width: 575.98px) {
@@ -295,6 +222,12 @@ Version: 1.0
   .vscode {
     height: 5rem;
   }
+  #Layer_1 {
+    height: 2rem;
+  }
+  .studioChittagong::after {
+    left: 1rem;
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
@@ -307,6 +240,9 @@ Version: 1.0
   }
   #expert>.row>div {
     padding: 3rem;
+  }
+  #Layer_1 {
+    height: 2rem;
   }
 }
 
@@ -323,6 +259,9 @@ Version: 1.0
   }
   #expert>.row>div {
     padding: 3rem;
+  }
+  #Layer_1 {
+    height: 2rem;
   }
 }
 
