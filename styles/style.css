@@ -14,22 +14,11 @@ Version: 1.0
 @font-face {
   font-family: "Popsky";
   src: url("../webfonts/Popsky/PopskyColor-FREE.otf") format("opentype");
+  font-display: swap;
 }
 
 :root {
-  --my_blue: rgba(0, 120, 215, 1);
-}
-
-#MainNav>.container>.social>a>i:hover {
-  color: rgba(255, 212, 45, 1);
-}
-
-#MainNav>.container>.social>a>svg>g>.st0:hover {
-  fill: rgba(255, 212, 45, 1);
-}
-
-#MainNav>.container>.social>a>svg>g>.st0 {
-  fill: var(--my_blue);
+  --my_blue: rgba(0, 60, 215, 1);
 }
 
 .color {
@@ -114,7 +103,7 @@ Version: 1.0
 #About>.row>.profile {
   background-image: url("../images/profile.jpg");
   background-size: cover;
-  height: 720px;
+  height: 100vh;
   background-position: 0 0;
   background-repeat: no-repeat;
 }
