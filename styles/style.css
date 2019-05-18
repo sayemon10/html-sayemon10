@@ -133,7 +133,7 @@ a:hover, a:hover>i {
 }
 
 #expert {
-  background-image: url("../images/002fff44-26f8-4134-8c05-b696e3adabea.png");
+  background: url("../images/002fff44-26f8-4134-8c05-b696e3adabea.png"), rgba( 252, 252, 248, 1);
   background-repeat: no-repeat;
   background-position: center bottom;
   height: 100vh;
