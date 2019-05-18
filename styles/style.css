@@ -21,8 +21,12 @@ Version: 1.0
   --my_blue: rgba(0, 60, 215, 1);
 }
 
-.color {
+a, .color {
   color: var(--my_blue);
+}
+
+a:hover, a:hover>i {
+  color: rgba(255, 212, 45, 1);
 }
 
 .NavbarBg {
@@ -30,7 +34,7 @@ Version: 1.0
 }
 
 .Hero {
-  background: url("../images/expertise.jpg") no-repeat center/cover;
+  background: url("../images/psHero.jpg") no-repeat center/cover;
   height: 100vh;
   color: var(--my_blue);
   margin-top: -80px;
