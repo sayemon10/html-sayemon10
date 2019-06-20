@@ -34,7 +34,7 @@ a:hover, a:hover>i {
 }
 
 .Hero {
-  background: url("../images/psHero.jpg") no-repeat center/cover;
+  background: url("https://res.cloudinary.com/dll9kdn5g/image/upload/v1561026782/psHero_mxmv2s.jpg") no-repeat center/cover;
   height: 100vh;
   color: var(--my_blue);
   margin-top: -76px;
@@ -105,7 +105,7 @@ a:hover, a:hover>i {
 }
 
 #About>.row>.profile {
-  background-image: url("../images/profile.jpg");
+  background-image: url("https://res.cloudinary.com/dll9kdn5g/image/upload/v1561026781/profile_p7m8ln.jpg");
   background-size: cover;
   height: 100vh;
   background-position: 0 0;
@@ -133,7 +133,7 @@ a:hover, a:hover>i {
 }
 
 #expert {
-  background: url("../images/002fff44-26f8-4134-8c05-b696e3adabea.png"), rgba( 252, 252, 248, 1);
+  background: url("https://res.cloudinary.com/dll9kdn5g/image/upload/v1561026781/002fff44-26f8-4134-8c05-b696e3adabea_j9swfs.png"), rgba( 252, 252, 248, 1);
   background-repeat: no-repeat;
   background-position: center bottom;
   height: 100vh;
@@ -181,7 +181,7 @@ a:hover, a:hover>i {
 }
 
 .studioChittagong::after {
-  content: url("../images/studioChittagongProject.jpg");
+  content: url("https://res.cloudinary.com/dll9kdn5g/image/upload/v1561026781/studioChittagongProject_arw0si.jpg");
   position: absolute;
   left: -10rem;
   top: 3rem;
