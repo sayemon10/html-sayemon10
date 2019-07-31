@@ -21,6 +21,10 @@ Version: 1.0
   --my_blue: rgba(0, 60, 215, 1);
 }
 
+body {
+  scroll-snap-type: y mandatory;
+}
+
 a, .color {
   color: var(--my_blue);
 }
@@ -40,6 +44,7 @@ a:hover, a:hover>i {
   margin-top: -76px;
   font-family: 'Rubik', sans-serif;
   font-size: 1rem;
+  scroll-snap-align: start;
 }
 
 #bottom {
@@ -102,6 +107,10 @@ a:hover, a:hover>i {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.5rem;
   color: var(--my_blue);
+}
+
+#About, #expert {
+  scroll-snap-align: start;
 }
 
 #About>.row>.profile {
