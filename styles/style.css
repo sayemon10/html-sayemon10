@@ -25,6 +25,26 @@ body {
   scroll-snap-type: y mandatory;
 }
 
+body::-webkit-scrollbar {
+  background-color: transparent;
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(40, 40, 40);
+  border-radius: 1rem;
+}
+
+/* set button(top and bottom of the scrollbar) */
+
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
 a, .color {
   color: var(--my_blue);
 }
