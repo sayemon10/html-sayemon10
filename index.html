@@ -34,12 +34,34 @@
   <link rel="shortcut icon" href="./images/A99.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <script>
+    // This is the service worker with the Cache-first network
 
+    // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+    // Check compatibility for the browser we're running this in
+    if ("serviceWorker" in navigator) {
+      if (navigator.serviceWorker.controller) {
+        console.log("[PWA Builder] active service worker found, no need to register");
+      } else {
+        // Register the service worker
+        navigator.serviceWorker
+          .register("pwabuilder-sw.js", {
+            scope: "./"
+          })
+          .then(function (reg) {
+            console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+          });
+      }
+    }
+
+  </script>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/style.css">
   <link href="./styles/fontawesome-all.css" rel="stylesheet">
+  <link rel='manifest' href='/manifest.webmanifest'>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116552066-1"></script>
   <script>
