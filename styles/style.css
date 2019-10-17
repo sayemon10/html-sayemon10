@@ -11,286 +11,65 @@ twitter: @sayemon10
 Version: 1.0
 ==================================================*/
 
-@font-face {
-  font-family: "Popsky";
-  src: url("../webfonts/Popsky/PopskyColor-FREE.otf") format("opentype");
-  font-display: swap;
+/* Box sizing rules */
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
-:root {
-  --my_blue: rgba(0, 60, 215, 1);
+/* Remove default margin */
+
+body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
 }
+
+/* Set core body defaults */
 
 body {
-  scroll-snap-type: y mandatory;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
 }
 
-body::-webkit-scrollbar {
-  background-color: rgba( 252, 252, 248, 1);
-  width: 0.4rem;
+/* Remove list styles on ul, ol elements with a class attribute */
+
+ul[class], ol[class] {
+    list-style: none;
 }
 
-body::-webkit-scrollbar-track {
-  background-color: rgba( 252, 252, 248, 1);
+/* A elements that don't have a class get default styles */
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
 }
 
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(40, 40, 40);
-  border-radius: 0.4rem;
+/* Make images easier to work with */
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
-/* set button(top and bottom of the scrollbar) */
+/* Natural flow and rhythm in articles by default */
 
-body::-webkit-scrollbar-button {
-  display: none;
+article>*+* {
+    margin-top: 1rem;
 }
 
-a, .color {
-  color: var(--my_blue);
+/* Inherit fonts for inputs and buttons */
+
+input, button, textarea, select {
+    font: inherit;
 }
 
-a:hover, a:hover>i {
-  color: rgba(255, 212, 45, 1);
-}
+/* Remove all animations and transitions for people that prefer not to see them */
 
-.NavbarBg {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.Hero {
-  background: url("https://res.cloudinary.com/dll9kdn5g/image/upload/v1561026782/psHero_mxmv2s.jpg") no-repeat center/cover;
-  height: 100vh;
-  color: var(--my_blue);
-  margin-top: -76px;
-  font-family: 'Rubik', sans-serif;
-  font-size: 1rem;
-  scroll-snap-align: start;
-}
-
-#bottom {
-  background: transparent;
-  height: 60px;
-}
-
-.icon-scroll, .icon-scroll:before {
-  position: absolute;
-  left: 50%;
-}
-
-.icon-scroll {
-  width: 20px;
-  height: 35px;
-  -webkit-box-shadow: inset 0 0 0 1px var(--my_blue);
-  box-shadow: inset 0 0 0 1px var(--my_blue);
-  border-radius: 12.5px;
-}
-
-.icon-scroll:before {
-  content: '';
-  width: 4px;
-  height: 4px;
-  background: var(--my_blue);
-  margin-left: -2px;
-  top: 4px;
-  border-radius: 2px;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: scroll;
-  animation-name: scroll;
-}
-
-@-webkit-keyframes scroll {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(12px);
-    transform: translateY(12px);
-  }
-}
-
-@keyframes scroll {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(23px);
-    transform: translateY(23px);
-  }
-}
-
-.navbar>.container>.row>a>.logo-text {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.5rem;
-  color: var(--my_blue);
-}
-
-#About, #expert {
-  scroll-snap-align: start;
-}
-
-#About>.row>.profile {
-  background-image: url("https://res.cloudinary.com/dll9kdn5g/image/upload/v1561026781/profile_p7m8ln.jpg");
-  background-size: cover;
-  height: 100vh;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-#About .HI {
-  font-family: "Popsky", sans-serif;
-  font-size: 4rem;
-}
-
-#About p {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-}
-
-.name {
-  font-size: 1.15rem;
-  font-family: 'Rubik', sans-serif;
-}
-
-#About, #expert #portfolio {
-  background-color: rgba( 252, 252, 248, 1);
-}
-
-#expert {
-  background: url("https://res.cloudinary.com/dll9kdn5g/image/upload/v1561026781/002fff44-26f8-4134-8c05-b696e3adabea_j9swfs.png"), rgba( 252, 252, 248, 1);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  height: 100vh;
-}
-
-#greet {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1rem;
-  padding-top: 10rem;
-}
-
-.email {
-  height: 3rem;
-}
-
-.CV:hover {
-  color: rgba(255, 212, 45, 1);
-}
-
-#contact {
-  background-color: var(--my_blue);
-  color: rgba( 252, 252, 248, 1);
-  height: 3rem;
-  font-family: 'Rubik', sans-serif;
-  font-size: 1rem;
-}
-
-.vscode {
-  height: 5rem;
-  font-family: 'Rubik', sans-serif;
-  color: var(--my_blue);
-}
-
-.design {
-  font-family: "Popsky", sans-serif;
-}
-
-/***
-  portfolio page
-***/
-
-#Layer_1 {
-  height: 3rem;
-  width: auto;
-}
-
-.studioChittagong::after {
-  content: url("https://res.cloudinary.com/dll9kdn5g/image/upload/v1561026781/studioChittagongProject_arw0si.jpg");
-  position: absolute;
-  left: -10rem;
-  top: 3rem;
-  z-index: -1;
-  display: none;
-}
-
-.portfolio:hover .studioChittagong::after {
-  display: block;
-}
-
-.portfolio {
-  height: 60vh;
-}
-
-/*** Media Query ***/
-
-@media only screen and (max-width: 575.98px) {
-  #classic {
-    display: none;
-  }
-  .Hero {
-    margin-top: -100px;
-  }
-  #About {
-    padding-top: 7rem;
-  }
-  #expert>.row>div {
-    padding: 2.5rem;
-  }
-  .vscode {
-    height: 5rem;
-  }
-  #Layer_1 {
-    height: 2rem;
-  }
-  .studioChittagong::after {
-    left: 1rem;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767.98px) {
-  #classic {
-    display: none;
-  }
-  #About {
-    padding-top: 14rem;
-    padding-bottom: 2rem;
-  }
-  #expert>.row>div {
-    padding: 3rem;
-  }
-  #Layer_1 {
-    height: 2rem;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991.98px) {
-  #classic {
-    display: none;
-  }
-  #About {
-    padding-top: 14rem;
-    padding-bottom: 2rem;
-  }
-  #expert {
-    padding-top: 2.5rem;
-  }
-  #expert>.row>div {
-    padding: 3rem;
-  }
-  #Layer_1 {
-    height: 2rem;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199.98px) {}
-
-@media only screen and (min-width: 1200px) {
-  .Hero {
-    background-attachment: fixed;
-  }
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
