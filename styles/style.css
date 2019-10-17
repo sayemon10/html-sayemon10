@@ -220,15 +220,16 @@ a:hover {
 
 .img-frame {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 13rem;
+  height: 13rem;
   margin: 0 0 10px 0;
   border-radius: 50%;
   overflow: hidden;
-  animation: b 10s linear infinite alternate;
+  animation: b 13s linear infinite alternate;
 }
 
 .img-frame img {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
