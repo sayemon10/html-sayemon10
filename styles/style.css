@@ -11,65 +11,291 @@ twitter: @sayemon10
 Version: 1.0
 ==================================================*/
 
+/* Font  */
+
+@font-face {
+  font-family: 'Fira Code Retina';
+  src: url("../fonts/FiraCode-Retina.ttf") format('truetype');
+  font-display: swap;
+}
+
 /* Box sizing rules */
 
 *, *::before, *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove default margin */
 
 body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
-    margin: 0;
+  margin: 0;
 }
 
 /* Set core body defaults */
 
 body {
-    min-height: 100vh;
-    scroll-behavior: smooth;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
+  font-variant-ligatures: contextual;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
 
 ul[class], ol[class] {
-    list-style: none;
+  list-style: none;
 }
 
 /* A elements that don't have a class get default styles */
 
 a:not([class]) {
-    text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 /* Natural flow and rhythm in articles by default */
 
 article>*+* {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 /* Inherit fonts for inputs and buttons */
 
 input, button, textarea, select {
-    font: inherit;
+  font: inherit;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
 
 @media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body, button {
+  background: #000;
+  color: #fff;
+  font-family: 'Fira Code Retina', monospace;
+}
+
+::selection {
+  background-color: rgba(0, 60, 215, 1);
+  color: #000;
+}
+
+body.dark-mode, body.dark-mode button, button.dark-mode, button.dark-mode button {
+  background: #fff;
+  color: #000;
+}
+
+button {
+  width: 120px;
+  height: 30px;
+  border: 2px solid #96979c;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #96979c;
+  font-size: 1rem;
+  overflow: auto;
+  transition: 0.4s ease all;
+}
+
+button:hover {
+  background: rgba(150, 151, 156, 0.1);
+  cursor: pointer;
+}
+
+.container {
+  margin: 50px auto;
+  padding: 5px;
+  max-width: 650px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-frame {
+  max-width: 350px;
+  text-align: end;
+}
+
+.dark-mode-toggler {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+}
+
+.dark-mode-toggler label {
+  position: relative;
+}
+
+.dark-mode-toggler input[type='checkbox'] {
+  display: none;
+}
+
+.dark-mode-toggler input[type='checkbox']+label::before {
+  content: '';
+  display: block;
+  height: 26px;
+  width: 60px;
+  background: #000;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  position: absolute;
+  top: 0px;
+  left: -65px;
+}
+
+.dark-mode-toggler input[type='checkbox']+label::after {
+  content: '';
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: #000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: -62px;
+  transition: all 0.4s ease-in;
+}
+
+.dark-mode-toggler input[type='checkbox']:checked+label::before {
+  background: #fff;
+  border: 2px solid #96979c;
+}
+
+.dark-mode-toggler input[type='checkbox']:checked+label::after {
+  background: #96979c;
+  border: 2px solid #fff;
+  left: -28px;
+  transition: all 0.4s ease-in;
+}
+
+h1 {
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  color: #96979c;
+  font-weight: 300;
+  margin: 0 0 0.5em 0;
+}
+
+a {
+  color: #96979c;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+.img-frame {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 0 10px 0;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: b 10s linear infinite alternate;
+}
+
+.img-frame img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  object-position: center;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .links {
+    text-align: center;
+  }
+}
+
+.toggler {
+  margin: 25px 0;
+}
+
+.toggler .show {
+  border-color: #eb4888;
+  color: #eb4888;
+}
+
+@media (max-width: 600px) {
+  .toggler {
+    text-align: center;
+  }
+  .toggler button {
+    margin: 5px;
+  }
+}
+
+.bio {
+  display: none;
+  line-height: 24px;
+}
+
+.bio br {
+  display: block;
+  content: '';
+  height: 15px;
+}
+
+.bio.show {
+  display: block;
+}
+
+@keyframes b {
+  0% {
+    border-radius: 70% 30% 35% 65% / 60% 40% 60% 40%
+  }
+  25% {
+    border-radius: 60% 40% 30% 70% / 50% 30% 70% 50%
+  }
+  50% {
+    border-radius: 30% 70% 50% 50% / 30% 40% 60% 70%
+  }
+  75% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%
+  }
+  100% {
+    border-radius: 70% 30% 35% 65% / 60% 40% 60% 40%
+  }
