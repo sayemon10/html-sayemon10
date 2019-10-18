@@ -1,4 +1,4 @@
-let colors = ['#24d05a', '#eb4888', '#10a2f5', '#e9bc3f'];
+let colors = ['#24d05a', '#ff0066', '#003cd7', '#ffd42d'];
 
 (function () {
   setModeEventListener();
@@ -9,7 +9,7 @@ let colors = ['#24d05a', '#eb4888', '#10a2f5', '#e9bc3f'];
 
   setInterval(() => {
     setRandomPhoto();
-  }, 3000);
+  }, 4000);
 
   setInterval(() => {
     setRandomLinkColor();

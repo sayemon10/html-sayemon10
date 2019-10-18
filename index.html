@@ -16,7 +16,7 @@
   <meta itemprop="name" content="Sayemon10">
   <meta itemprop="description"
     content="I’m S. M. Abdul Aziz, from Chittagong, port city on the southeastern coast of Bangladesh. I’ve studied in Statistics and then I found my passion in Designing & Programming. I do Web, Mobile, UI/UX and Front-End development. I’m a quick-learner and an independent individual.">
-  <meta itemprop="image" content="https://sayemon10.github.io/images/A99.png">
+  <meta itemprop="image" content="https://sayemon10.github.io/images/photo1.jpg">
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Sayemon10">
@@ -35,6 +35,31 @@
   <meta property="og:type" content="website">
   <link rel="publisher" href="https://twitter.com/sayemon10">
   <link rel="shortcut icon" href="./images/A99.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://unpkg.com/">
+  <link rel="preconnect" href="https://res.cloudinary.com/">
+  <script>
+    // This is the service worker with the Cache-first network
+
+    // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+    // Check compatibility for the browser we're running this in
+    if ("serviceWorker" in navigator) {
+      if (navigator.serviceWorker.controller) {
+        console.log("[PWA Builder] active service worker found, no need to register");
+      } else {
+        // Register the service worker
+        navigator.serviceWorker
+          .register("pwabuilder-sw.js", {
+            scope: "./"
+          })
+          .then(function (reg) {
+            console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+          });
+      }
+    }
+
+  </script>
+  <link rel='manifest' href='/manifest.webmanifest'>
 
   <!-- styles -->
   <link rel="stylesheet" href="./styles/style.css">
@@ -49,10 +74,9 @@
   </script>
 </head>
 
-<body>
+<body data-instant-intensity="mousedown">
   <div class="container">
     <div class="header-section">
-
       <div class="img-frame">
         <img id="propic" src="" alt="" />
       </div>
@@ -82,25 +106,70 @@
         <button id="contact">Contact</button>
       </div>
       <div class="bio about show">
-        Hi there! My name is S. M. Abdul Aziz
-
+        Hi there, I’m S. M. Abdul Aziz, self-taught front-end developer, from Chittagong, port city on the southeastern
+        coast of Bangladesh. I’ve studied in Statistics @ <a href="http://sust.edu" target="_blank" rel="noopener"
+          rel="noreferrer" title="Shahjalal University of Science & Technology, Sylhet-3114">SUST</a> and then I found
+        my passion in Designing & Programming . I do Web, Mobile, UI/UX and Front-End development. I’m a quick-learner
+        and an independent individual.
       </div>
       <div class="bio projects">
-        Well hello there! My name is at
-
+        <ul class="container">
+          <li>
+            <a href="https://studiochittagong.com" target="_blank" class="Button" rel="noopener" rel="noreferrer">
+              <img alt="Studio Chittagong" src="./images/projects/studioChittagongProject.jpg">
+              <div class="Header">
+                <p><span>2018</span></p>
+                <p class="fake-heading">Studio Chittagong</p>
+              </div>
+              <svg class="Arrow" viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33 0H0v3h28L0 31l2 2L30 5v28h3z" fill="currentColor"></path>
+              </svg>
+            </a>
+            <hr>
+          </li>
+          <li>
+            <a href="https://sayemon10.github.io/version__01/" title="sayemon10" target="_blank" class="Button"
+              rel="noopener" rel="noreferrer">
+              <img alt="sayemon10" src="./images/projects/Sayemon10 __ S. M. Abdul Aziz.png">
+              <div class="Header">
+                <p><span>version__01</span></p>
+                <p class="fake-heading">Sayemon10 || S. M. Abdul Aziz</p>
+              </div>
+              <svg class="Arrow" viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33 0H0v3h28L0 31l2 2L30 5v28h3z" fill="currentColor"></path>
+              </svg>
+            </a>
+            <hr>
+          </li>
+        </ul>
       </div>
       <div class="bio contact">
-        Resume && Coffee
-
+        Requests of any kind of relating to projects or jobs as well as invitations to meet for Coffee are highly
+        appreciated. Cann't wait to hear from you!
+        <br>
+        <a href="./Resume.pdf" class="cv" target="_blank" download="Resume_of_S.M.AbdulAziz.pdf">Download my
+          Resume</a>
+        <br>
+        <a href="mailto:abdulaziz.aziz99@gmail.com?subject=Hello!&amp;body=Hi Sayemon10, so I was looking at your website and..."
+          rel="noopener" rel="noreferrer" title="email">
+          <span id="email">
+            Connect with me via
+          </span>
+          <img src="https://res.cloudinary.com/dll9kdn5g/image/upload/v1561026782/thumb_Mail-2_q13tw2.png" class="email"
+            alt="email">
+        </a>
       </div>
     </div>
     <div class="dark-mode-toggler">
       <input type="checkbox" id="toggler" />
-      <label for="toggler" aria-label="Toggler for Dark Mode"></label>
+      <label for="toggler" aria-label="Toggler for Light Mode"></label>
     </div>
   </div>
 
   <script src="./scripts/script.js"></script>
+  <script src="https://unpkg.com/mailgo@latest/dist/mailgo.min.js"></script>
+  <script src="https://instant.page/2.0.0" type="module"
+    integrity="sha384-D7B5eODAUd397+f4zNFAVlnDNDtO1ppV8rPnfygILQXhqu3cUndgHvlcJR2Bhig8"></script>
 </body>
 
 </html>
