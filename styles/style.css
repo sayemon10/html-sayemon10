@@ -15,7 +15,7 @@ Version: 1.0
 
 @font-face {
   font-family: 'Fira Code Retina';
-  src: url("../fonts/FiraCode-Retina.ttf") format('truetype');
+  src: url("../fonts/FiraCode-Light.ttf") format('truetype');
   font-display: swap;
 }
 
