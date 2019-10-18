@@ -443,6 +443,11 @@ a[title="email"] {
   height: 2rem;
 }
 
+footer p {
+  margin-top: 4rem;
+  text-align: center;
+}
+
 @media only screen and (max-width: 425px) {
   .img-frame {
     order: 2;
