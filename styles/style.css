@@ -455,4 +455,7 @@ footer p {
   .img-frame, .header-frame {
     margin: 0 auto;
   }
+  .links a {
+    margin: 0.3rem;
+  }
 }

@@ -35,6 +35,8 @@
   <meta property="og:type" content="website">
   <link rel="publisher" href="https://twitter.com/sayemon10">
   <link rel="shortcut icon" href="./images/A99.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./images/A99.png">
+  <meta name="theme-color" content="#111" />
   <link rel="preconnect" href="https://unpkg.com/">
   <link rel="preconnect" href="https://res.cloudinary.com/">
   <script>
@@ -71,8 +73,8 @@
 </head>
 
 <body data-instant-intensity="mousedown">
-  <div class="container">
-    <div class="header-section">
+  <main class="container">
+    <header class="header-section">
       <div class="img-frame">
         <img id="propic" src="" alt="" />
       </div>
@@ -80,7 +82,7 @@
         <h1>S. M. Abdul Aziz</h1>
         <h2>designer<=>developer</h2>
       </div>
-    </div>
+    </header>
     <div class="links">
       <a href="http://twitter.com/sayemon10" title="@sayemon10" target="_blank" rel="noopener"
         rel="noreferrer">twitter</a>
@@ -95,7 +97,7 @@
       <a href="mailto:abdulaziz.aziz99@gmail.com" title="e-mail" target="_blank" rel="noopener"
         rel="noreferrer">email</a>
     </div>
-    <div class="bio-switcher">
+    <nav class="bio-switcher">
       <div class="toggler">
         <button id="about" class="show">Bio</button>
         <button id="projects">Projects</button>
@@ -155,17 +157,17 @@
             alt="email">
         </a>
       </div>
-    </div>
-    <div class="dark-mode-toggler">
-      <input type="checkbox" id="toggler" />
-      <label for="toggler" aria-label="Toggler for Light Mode"></label>
-    </div>
+    </nav>
     <footer>
       <p>design && code with 💖 by
         <a href="http://twitter.com/sayemon10" title="@sayemon10" target="_blank" rel="noopener"
           rel="noreferrer">@sayemon10</a></p>
     </footer>
-  </div>
+    <div class="dark-mode-toggler">
+      <input type="checkbox" id="toggler" />
+      <label for="toggler" aria-label="Toggler for Light Mode"></label>
+    </div>
+  </main>
 
   <script src="./scripts/script.js"></script>
   <script src="https://unpkg.com/mailgo@latest/dist/mailgo.min.js"></script>

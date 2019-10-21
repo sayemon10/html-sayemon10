@@ -3,6 +3,7 @@
 const CACHE = "pwabuilder-precache";
 const precacheFiles = [
     /* Add an array of files to precache for your app */
+    '/', '/index.html', '/styles/style.css', '/images/projects/Sayemon10 __ S. M. Abdul Aziz.jpg', '/images/projects/Studio Chittagong.jpg', '/fonts/FiraCode-Light.ttf', '/scripts/script.js', '/images/A99.ico', '/images/photo1.jpg', '/images/photo2.jpg'
 ];
 
 self.addEventListener("install", function (event) {
