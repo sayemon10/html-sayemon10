@@ -39,19 +39,6 @@
   <meta name="theme-color" content="#111" />
   <link rel="preconnect" href="https://unpkg.com/">
   <link rel="preconnect" href="https://res.cloudinary.com/">
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('/sw.js').then(function (registration) {
-          // Registration was successful
-          console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }, function (err) {
-          // registration failed :(
-          console.log('ServiceWorker registration failed: ', err);
-        });
-      });
-    }
-  </script>
   <!-- styles -->
   <link rel="stylesheet" href="./styles/style.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
