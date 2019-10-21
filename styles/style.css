@@ -154,7 +154,7 @@ button:hover {
   max-width: 40.625rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 425px) {
   .container {
     padding: 1.25rem;
   }
@@ -282,7 +282,7 @@ a:hover {
   color: rgba(0, 60, 215, 1);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 425px) {
   .toggler button {
     margin: 0.3125rem;
   }
