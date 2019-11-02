@@ -39,8 +39,31 @@
   <meta name="theme-color" content="#111" />
   <link rel="preconnect" href="https://unpkg.com/">
   <link rel="preconnect" href="https://res.cloudinary.com/">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  <link rel="preconnect" href="https://instant.page">
+  <link rel="preload" href="./images/photo1.jpg" as="image">
+  <link rel="preload" href="./images/photo2.jpg" as="image">
+  <link rel="preload" href="./styles/style.css" as="style">
   <!-- styles -->
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preload" href="./fonts/FiraCode-Light.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="./scripts/script.js">
+  <link rel="manifest" href="manifest.json">
+  <script>
+    (function () {
+      // ServiceWorker is a progressive technology. Ignore unsupported browsers
+      if ('serviceWorker' in navigator) {
+        console.log('CLIENT: service worker registration in progress.');
+        navigator.serviceWorker.register('./sw.js').then(function () {
+          console.log('CLIENT: service worker registration complete.');
+        }, function () {
+          console.log('CLIENT: service worker registration failure.');
+        });
+      } else {
+        console.log('CLIENT: service worker is not supported.');
+      }
+    })();
+  </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116552066-1"></script>
   <script>
