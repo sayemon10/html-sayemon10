@@ -41,9 +41,11 @@
   <link rel="preconnect" href="https://res.cloudinary.com/">
   <link rel="preconnect" href="https://www.google-analytics.com">
   <link rel="preconnect" href="https://instant.page">
-  <link rel="preload" href="./styles/style.css" as="style">
   <!-- styles -->
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preload" href="./styles/style.css" as="style">
+  <link rel="stylesheet" href="./styles/style.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="./styles/style.css"></noscript>
   <link rel="preload" href="./images/photo1.jpg" as="image">
   <link rel="preload" href="./images/photo2.jpg" as="image">
   <link rel="preload" href="./fonts/FiraCode-Light.ttf" as="font" type="font/ttf" crossorigin>
@@ -73,9 +75,32 @@
 
     gtag('config', 'UA-116552066-1');
   </script>
+  <style>
+    @media all and (-ms-high-contrast: none),
+    (-ms-high-contrast: active) {
+      /* IE10+ CSS styles go here */
+
+      main {
+        display: none;
+      }
+
+      noscript,
+      .notice {
+        display: block;
+        text-align: center;
+        margin-top: 7rem;
+      }
+    }
+  </style>
 </head>
 
 <body data-instant-intensity="mousedown" oncontextmenu="return false;">
+
+  <div class="notice">
+    <p>You are using an outdated browser. Please <a href="http://browsehappy.com">upgrade your browser</a> to improve
+      your experience.</p>
+  </div>
+
   <noscript>You need to enable JavaScript to run this page.</noscript>
   <main class="container">
     <header class="header-section">
@@ -85,6 +110,7 @@
       <div class="header-frame">
         <h1>S. M. Abdul Aziz</h1>
         <h2>designer<=>developer</h2>
+        <h5>* currenty available for hire *</h5>
       </div>
     </header>
     <div class="links">
@@ -94,8 +120,11 @@
       <a href="https://www.behance.net/sayemon10" title="@sayemon10" target="_blank"
         rel="noopener noreferrer">behance</a>
       <a href="https://dribbble.com/sayemon10" title="@sayemon10" target="_blank" rel="noopener noreferrer">dribbble</a>
-      <a href="http://github.com/sayemon10" title="@sayemon10" target="_blank" rel="noopener noreferrer">github</a>
+      <!-- <a href="http://github.com/sayemon10" title="@sayemon10" target="_blank" rel="noopener noreferrer">github</a> -->
       <a href="mailto:abdulaziz.aziz99@gmail.com" title="e-mail" target="_blank" rel="noopener noreferrer">email</a>
+      <button class="call">
+        <a href="tel:+8801571737051" title="Call me">Call me</a>
+      </button>
     </div>
     <nav class="bio-switcher">
       <div class="toggler">
