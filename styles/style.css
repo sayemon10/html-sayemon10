@@ -207,7 +207,13 @@ button:hover {
 }
 
 .dark-mode-toggler input[type="checkbox"] {
-  display: none;
+  position: absolute;
+  top: -10rem;
+}
+
+input#toggler:focus ~ label::after,
+input#toggler:focus-within ~ label::after {
+  background: #eb4888;
 }
 
 .dark-mode-toggler input[type="checkbox"] + label::before {
