@@ -122,6 +122,11 @@ body::-webkit-scrollbar-button {
 
 :root {
   --anim-ease-for-small-animations: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --fill: rgba(252, 252, 248, 1);
+}
+
+body.dark-mode {
+  --fill: rgba(36, 41, 46, 1);
 }
 
 html,
@@ -150,6 +155,7 @@ button.dark-mode button {
   color: rgba(36, 41, 46, 1);
 }
 
+.call,
 button {
   width: 7.5rem;
   height: 1.875rem;
@@ -266,6 +272,10 @@ h2 {
   margin: 0 0 0.5rem 0;
 }
 
+.hire {
+  font-size: 0.83rem;
+}
+
 a {
   color: #96979c;
 }
@@ -276,8 +286,8 @@ a:hover {
 
 .img-frame {
   position: relative;
-  width: 13rem;
-  height: 13rem;
+  width: 10rem;
+  height: 10rem;
   margin: 0 0 10px 0;
   border-radius: 50%;
   overflow: hidden;
@@ -483,6 +493,23 @@ footer p {
   text-align: center;
 }
 
+.tech ul {
+  display: grid;
+  grid-template-areas:
+    "ps ai code"
+    "html css js"
+    "dj hugo .";
+  grid-gap: 1rem;
+  place-items: center;
+  padding-block-start: 5rem;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+svg {
+  height: 5rem;
+}
+
 .notice {
   display: none;
 }
@@ -493,15 +520,14 @@ footer p {
   }
   .img-frame,
   .header-frame {
-    margin: 0 auto;
+    margin: 0 auto 2rem;
     text-align: center;
   }
   .links a {
     margin: 0.3rem;
   }
-  button.call {
+  .call {
     display: block;
-    width: auto;
-    padding: 0 0.45rem;
+    text-align: center;
   }
 }
