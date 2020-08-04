@@ -500,6 +500,7 @@ footer p {
     "html css js"
     "dj hugo .";
   grid-gap: 1rem;
+  row-gap: 3rem;
   place-items: center;
   padding-block-start: 5rem;
   padding-inline-start: 0;
