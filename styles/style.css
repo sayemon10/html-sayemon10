@@ -489,7 +489,6 @@ a[title="email"] {
 }
 
 footer p {
-  margin-top: 4rem;
   text-align: center;
 }
 
@@ -513,6 +512,10 @@ svg {
 
 .notice {
   display: none;
+}
+
+footer > img {
+  margin: auto;
 }
 
 @media only screen and (max-width: 425px) {
