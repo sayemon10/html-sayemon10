@@ -102,6 +102,8 @@ select {
   }
 }
 
+/* scrollbar */
+
 body::-webkit-scrollbar {
   background-color: rgba(252, 252, 248, 1);
   width: 0.4rem;
