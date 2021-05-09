@@ -490,6 +490,11 @@ a[title="email"] {
   height: 2rem;
 }
 
+footer img{
+  object-fit: contain;
+  object-position: center;
+}
+
 footer p {
   text-align: center;
 }
