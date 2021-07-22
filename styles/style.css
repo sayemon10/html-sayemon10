@@ -202,6 +202,7 @@ button:hover {
 .header-frame {
   max-width: 21.875rem;
   text-align: end;
+  display: block;
 }
 
 .dark-mode-toggler {
@@ -312,6 +313,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .call {
@@ -540,5 +542,6 @@ footer > img {
   .call {
     display: block;
     text-align: center;
+    width: 100vw;
   }
 }
