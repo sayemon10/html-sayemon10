@@ -131,13 +131,6 @@ body.dark-mode {
   --fill: rgba(36, 41, 46, 1);
 }
 
-html,
-body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 body,
 button {
   background: rgba(36, 41, 46, 1);
@@ -157,20 +150,6 @@ button.dark-mode button {
   color: rgba(36, 41, 46, 1);
 }
 
-.call,
-button {
-  width: 7.5rem;
-  height: 1.875rem;
-  border: 0.12rem solid #96979c;
-  border-radius: 1rem;
-  box-sizing: border-box;
-  color: #96979c;
-  font-size: 1rem;
-  overflow: auto;
-  transition: 0.4s ease all;
-  margin-right: 1rem;
-}
-
 button:last-child {
   margin-right: 0;
 }
@@ -178,31 +157,6 @@ button:last-child {
 button:hover {
   background: rgba(150, 151, 156, 0.1);
   cursor: pointer;
-}
-
-.container {
-  margin: 3.125rem auto;
-  padding: 0.3125rem;
-  max-width: 40.625rem;
-}
-
-@media (max-width: 425px) {
-  .container {
-    padding: 1.25rem;
-  }
-}
-
-.header-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.header-frame {
-  max-width: 21.875rem;
-  text-align: end;
-  display: block;
 }
 
 .dark-mode-toggler {
@@ -264,19 +218,8 @@ input#toggler:focus-within ~ label::after {
   transition: all 0.4s ease-in;
 }
 
-h1 {
-  font-weight: 400;
-  margin: 0;
-}
-
 h2 {
   color: #96979c;
-  font-weight: 300;
-  margin: 0 0 0.5rem 0;
-}
-
-.hire {
-  font-size: 0.83rem;
 }
 
 a {
@@ -288,52 +231,11 @@ a:hover {
 }
 
 .img-frame {
-  position: relative;
-  width: 10rem;
-  height: 10rem;
-  margin: 0 0 10px 0;
-  border-radius: 50%;
-  overflow: hidden;
   animation: b 13s linear infinite alternate;
 }
 
-.img-frame img {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  object-position: center;
-}
-
 .links {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
   gap: 1rem;
-}
-
-.call {
-  display: none;
-}
-
-.toggler {
-  display: flex;
-  margin: 1.5rem 0;
-}
-
-.toggler .show {
-  border-color: rgba(0, 60, 215, 1);
-  color: rgba(0, 60, 215, 1);
-}
-
-@media (max-width: 425px) {
-  .toggler button {
-    margin: 0.3125rem;
-  }
 }
 
 .bio {
@@ -492,13 +394,9 @@ a[title="email"] {
   height: 2rem;
 }
 
-footer img{
+footer img {
   object-fit: contain;
   object-position: center;
-}
-
-footer p {
-  text-align: center;
 }
 
 .tech ul {
@@ -521,27 +419,4 @@ svg {
 
 .notice {
   display: none;
-}
-
-footer > img {
-  margin: auto;
-}
-
-@media only screen and (max-width: 425px) {
-  .img-frame {
-    order: 2;
-  }
-  .img-frame,
-  .header-frame {
-    margin: 0 auto 2rem;
-    text-align: center;
-  }
-  .links a {
-    margin: 0.3rem;
-  }
-  .call {
-    display: block;
-    text-align: center;
-    width: 100vw;
-  }
 }
