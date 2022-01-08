@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>404 || Page Not Found</title>
     <!-- Required meta tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="S. M. Abdul Aziz">
     <meta name="keywords" content="sayemon10, S. M. Abdul Aziz, design, code, development">
     <meta name="description"
@@ -40,8 +39,10 @@
     <meta name="theme-color" content="#111" />
     <link rel="preconnect" href="https://www.google-analytics.com">
     <link rel="preconnect" href="https://instant.page">
+    <link rel="preload" href="./styles/tachyons.min.css" as="style">
     <link rel="preload" href="./styles/style.css" as="style">
     <!-- styles -->
+  <link rel="stylesheet" href="./styles/tachyons.min.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preload" href="./fonts/FiraCode-Light.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="manifest" href="manifest.json">
@@ -61,7 +62,7 @@
         })();
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQYCDZGMY3"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQYCDZGMY3" crossorigin="anonymous"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -98,16 +99,6 @@
         .header-frame {
             margin-inline-start: auto;
         }
-
-        button {
-            width: auto;
-            padding: 0 1rem;
-            margin-right: 0;
-            position: absolute;
-            top: 70%;
-            left: 50%;
-            transform: translateX(-50%);
-        }
     </style>
 </head>
 
@@ -117,7 +108,7 @@
             <h1>S. M. Abdul Aziz</h1>
             <h2>designer<=>developer</h2>
         </div>
-        <div class="links">
+        <div class="links flex justify-center">
             <a href="http://twitter.com/sayemon10" title="@sayemon10" target="_blank"
                 rel="noopener noreferrer">twitter</a>
             <a href="https://www.linkedin.com/in/s-m-abdul-aziz/" title="S. M. Abdul Aziz" target="_blank"
@@ -132,9 +123,9 @@
                 rel="noopener noreferrer">email</a>
         </div>
     </div>
-    <button>
-        <a href="./index.html">Takeme Home</a>
-    </button>
+    <div class="flex justify-center mt3">
+        <a href="./index.html" class="tc br-pill b--solid bw1 w-auto h-auto ph3 ph4-ns pv2">Takeme Home</a>
+    </div>
     <script>
         let colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f"];
         (function () {
