@@ -72,7 +72,7 @@ a:not([class]) {
 a:after {
   content: "↗";
   display: inline-block;
-  margin-left: 0.125rem;
+  margin-left: 2px;
 }
 /* Make images easier to work with */
 
