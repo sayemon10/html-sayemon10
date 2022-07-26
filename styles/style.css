@@ -70,7 +70,7 @@ a:not([class]) {
 }
 
 a:after {
-  content: "↗";
+  content: "\2197";
   display: inline-block;
   margin-left: 2px;
 }
