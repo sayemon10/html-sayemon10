@@ -69,6 +69,11 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+a:after {
+  content: "↗";
+  display: inline-block;
+  margin-left: 0.125rem;
+}
 /* Make images easier to work with */
 
 img {
