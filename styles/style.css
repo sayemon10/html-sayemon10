@@ -69,11 +69,63 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-a:after {
+a[title]:after {
   content: "\2197";
   display: inline-block;
   margin-left: 2px;
 }
+
+a[target="_blank"] {
+  display: inline-flex;
+  text-decoration: none;
+}
+
+[data-split],
+[data-split] span {
+  display: inline-block;
+}
+
+[data-split] .inner {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+[data-split] .back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+[data-split] .char {
+  transition: all 0.4s cubic-bezier(0.2, 0.63, 0.4, 1.02);
+  transition-delay: calc(0.015s * var(--index));
+}
+
+[data-split] .back .char {
+  opacity: 0;
+  /*we use 101% instead of 100% just to be safe that the characters won't appear depending on the font family*/
+  transform: translateY(101%) skewX(55deg);
+}
+
+[data-split-type="hover"] .char {
+  transition-duration: 0.25s;
+}
+
+[data-split-type="scroll"].is-animated .back .char,
+[data-split-type="hover"]:hover .back .char {
+  opacity: 1;
+  transform: none;
+}
+
+[data-split-type="scroll"].is-animated .front .char,
+[data-split-type="hover"]:hover .front .char {
+  opacity: 0;
+  transform: translateY(-101%) skewX(-55deg);
+}
+
 /* Make images easier to work with */
 
 img {
@@ -221,10 +273,6 @@ input#toggler:focus-within ~ label::after {
   border: 0.12rem solid rgba(252, 252, 248, 1);
   left: -1.75rem;
   transition: all 0.4s ease-in;
-}
-
-h2 {
-  color: #96979c;
 }
 
 a {
@@ -381,10 +429,8 @@ hr {
     0.2s -webkit-transform var(--anim-ease-for-small-animations);
 }
 
-a[title="email"] {
-  display: flex;
-  text-decoration: none !important;
-  margin-top: 1rem;
+a[title="email"]:after {
+  content: "";
 }
 
 #email {
@@ -404,7 +450,7 @@ footer img {
   object-position: center;
 }
 
-.tech ul {
+.exp ul.item {
   display: -ms-grid;
   display: grid;
   grid-template-areas:
