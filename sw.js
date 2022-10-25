@@ -17,8 +17,6 @@ var offlineFundamentals = [
   "scripts/script.js",
   "images/photo1.webp",
   "images/photo2.webp",
-  "images/projects/Sayemon10 __ S. M. Abdul Aziz.jpg",
-  "images/projects/Studio Chittagong.jpg",
 ];
 
 /* The install event fires when the service worker is first installed.
